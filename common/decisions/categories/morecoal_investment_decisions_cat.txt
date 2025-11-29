@@ -21,6 +21,9 @@ morecoal_investment_decisions_cat = {
 		NOT = {
 			tag = GER
 		}
+		NOT = {
+			tag = JAP
+		}
 		NOT = { 
 			has_global_flag = morecoal_disable_all_flag 
 		}

@@ -8,7 +8,7 @@ morecoal_investment_decisions_cat = {
 		ai_will_do = {
 			base = 0
             modifier = {
-                add = 25
+                add = 10
 				has_resources_in_country = {
 					resource = coal
 					amount < 10
@@ -18,7 +18,9 @@ morecoal_investment_decisions_cat = {
 		}
 
 		visible = {
-			always = yes
+			NOT = {
+				has_country_flag = morecoal_prepared_envoy_flag
+			}
 		}
 
 		available = {
@@ -106,7 +108,7 @@ morecoal_investment_decisions_cat = {
 			capital_scope = {
 				add_resource = {
 					type = coal
-					amount = 65
+					amount = 60
 				}
 			}
 
@@ -129,7 +131,7 @@ morecoal_investment_decisions_cat = {
 			capital_scope = {
 				add_resource = {
 					type = coal
-					amount = -65
+					amount = -60
 				}
 			}
 
@@ -462,6 +464,92 @@ morecoal_investment_decisions_cat = {
 				add_resource = {
 					type = coal
 					amount = -35
+				}
+			}
+
+		}
+	}
+
+
+	morecoal_treat_with_jap = {
+
+
+		icon = GFX_decision_generic_decision
+
+		ai_will_do = {
+			base = 20
+		}
+
+		visible = {
+			country_exists = JAP
+		}
+
+		available = {
+			any_character = {
+				is_hired_as_advisor = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = morecoal_has_prepared_envoy_tt		
+				has_country_flag = morecoal_prepared_envoy_flag
+			}
+			
+			JAP = {
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+			}
+			
+		}
+
+		days_remove = 365
+		fixed_random_seed = no
+
+		cost = 25
+
+		fire_only_once = no
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		complete_effect = {
+			
+
+			JAP = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+
+			capital_scope = {
+				add_resource = {
+					type = coal
+					amount = 28
+				}
+			}
+
+			clr_country_flag = morecoal_prepared_envoy_flag
+
+		}
+
+		remove_effect = {
+
+			hidden_effect = {
+				JAP = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = -1
+					}
+				}
+			}
+			
+
+			capital_scope = {
+				add_resource = {
+					type = coal
+					amount = -28
 				}
 			}
 

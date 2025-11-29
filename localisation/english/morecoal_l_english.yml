@@ -1,25 +1,19 @@
 ﻿l_english:
 ### EVENTS
 coal_events.1.t:0 "More Coal Mod"
-coal_events.1.desc:0 "Welcome to the More Coal mod, you have four mod options to choose from.\n - Add more coal\n - Dont add coal\n - Option to disable the AI from adding coal in their countries.\n - Option to disable everything including the decisions.\n\nThis mod is meant to only add more coal in the regions that historically produced coal/lignite during the second world war."
-coal_events.1.a:0 "Add more coal in my country."
-coal_events.1.b:0 "Don't add any coal in my country."
-coal_events.1.c:0 "Disable AI adding coal."
-coal_events.1.d:0 "Disable Everything."
+coal_events.1.desc:0 "Welcome to the More Coal mod, you have three mod options to choose from.\n - Add more coal\n - Dont add coal\n - Option to disable everything.\n\nThis mod is meant to only add more coal in the regions that historically produced coal/lignite during the second world war."
+coal_events.1.a:0 "Add more coal"
+coal_events.1.b:0 "Don't add any coal"
+coal_events.1.d:0 "Disable Mod."
 
-
-coal_events.2.t:0 "More Coal"
-coal_events.2.desc:0 ""
-coal_events.2.a:0 "Add more coal in my country."
-
+coal_events.1.t:0 "Coal Treaty Policy"
 
 
 
 ### EVENTS TOOLTIPS
-morecoal_add:0 "§LThis option will add more coal to your country, all provinces affected will be listed below.§!"
-morecoal_dont_add:0 "§LThis option will not add any coal in your country, the AI however, will still choose to add coal in their countries.§!"
-morecoal_dont_add_disable_ai:0 "§LThis option will not add any coal in your country, this option also makes the AI not add any coal in their countries.§!"
-morecoal_disable_all:0 "§LThis option will not add any coal in your country, this option also makes the AI not add any coal in their countries and this option also disables the coal investment decisions for every country. Effectively disabling the mod.§!"
+morecoal_add:0 "§LThis option will add more coal to the game, all provinces affected will be listed below.§!"
+morecoal_dont_add:0 "§LThis option will not add any coal to the game but the decisions are still available.§!"
+morecoal_disable_all:0 "§LThis option will disable the mod.§!"
 
 
 
@@ -38,6 +32,7 @@ morecoal_treat_with_eng:0 "[ENG.GetName] coal treaty"
 morecoal_treat_with_fra:0 "[FRA.GetName] coal treaty"
 morecoal_treat_with_sov:0 "[SOV.GetName] coal treaty"
 morecoal_treat_with_ger:0 "[GER.GetName] coal treaty"
+morecoal_treat_with_jap:0 "[JAP.GetName] coal treaty"
 
 ### DECISIONS TOOLTIPS
 morecoal_diplomatic_envoy_tt:0 "§LPrepare to send an advisor to treat with one of the major powers regarding our energy situation.§!"
