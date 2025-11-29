@@ -1,0 +1,30 @@
+morecoal_investment_decisions_cat = {
+	icon = generic_prospect_for_resources
+
+	allowed = {
+		always = yes
+	}
+	
+	visible = {
+		NOT = {
+			tag = USA
+		}
+		NOT = {
+			tag = SOV
+		}
+		NOT = {
+			tag = ENG
+		}
+		NOT = {
+			tag = FRA
+		}
+		NOT = {
+			tag = GER
+		}
+		NOT = { 
+			has_global_flag = morecoal_disable_all_flag 
+		}
+	}
+
+}
+

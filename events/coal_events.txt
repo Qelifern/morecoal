@@ -1,0 +1,1911 @@
+###########################
+# Coal Events
+###########################
+
+add_namespace = coal_events
+
+
+## FOR PLAYERS
+country_event = {
+	id = coal_events.1
+	title = coal_events.1.t
+	desc = coal_events.1.desc
+
+	is_triggered_only = yes
+
+	#ADD COAL
+	option = {
+		name = coal_events.1.a
+
+
+		custom_effect_tooltip = morecoal_add
+
+		# USA
+		if = {
+			limit = {
+				tag = USA
+			}
+			816 = {
+				add_resource = {
+					type = coal
+					amount = 44
+				}
+			}
+			360 = {
+				add_resource = {
+					type = coal
+					amount = 80
+				}
+			}
+			369 = {
+				add_resource = {
+					type = coal
+					amount = 30
+				}
+			}
+			362 = {
+				add_resource = {
+					type = coal
+					amount = 60
+				}
+			}
+			395 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			396 = {
+				add_resource = {
+					type = coal
+					amount = 23
+				}
+			}
+			382 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			380 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			381 = {
+				add_resource = {
+					type = coal
+					amount = 30
+				}
+			}
+			388 = {
+				add_resource = {
+					type = coal
+					amount = 15
+				}
+			}
+		}
+
+
+		# GER
+		if = {
+			limit = {
+				tag = GER
+			}
+			51 = {
+				add_resource = {
+					type = coal
+					amount = 70
+				}
+			}
+			67 = {
+				add_resource = {
+					type = coal
+					amount = 25
+				}
+			}
+			42 = {
+				add_resource = {
+					type = coal
+					amount = 26
+				}
+			}
+			65 = {
+				add_resource = {
+					type = coal
+					amount = 21
+				}
+			}
+		}
+
+		# CZE
+		if = {
+			limit = {
+				tag = CZE
+			}
+			9 = {
+				add_resource = {
+					type = coal
+					amount = 49
+				}
+			}
+			75 = {
+				add_resource = {
+					type = coal
+					amount = 17
+				}
+			}
+			72 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+		}
+
+		# ENG
+		if = {
+			limit = {
+				tag = ENG
+			}
+			130 = {
+				add_resource = {
+					type = coal
+					amount = 40
+				}
+			}
+			129 = {
+				add_resource = {
+					type = coal
+					amount = 17
+				}
+			}
+			132 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			122 = {
+				add_resource = {
+					type = coal
+					amount = 28
+				}
+			}
+			133 = {
+				add_resource = {
+					type = coal
+					amount = 21
+				}
+			}
+		}
+
+		# SOV
+		if = {
+			limit = {
+				tag = SOV
+			}
+			227 = {
+				add_resource = {
+					type = coal
+					amount = 70
+				}
+			}
+			578 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			569 = {
+				add_resource = {
+					type = coal
+					amount = 10
+				}
+			}
+			219 = {
+				add_resource = {
+					type = coal
+					amount = 37
+				}
+			}
+			881 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			825 = {
+				add_resource = {
+					type = coal
+					amount = 23
+				}
+			}
+		}
+
+
+		# JAP
+		if = {
+			limit = {
+				tag = JAP
+			}
+			536 = {
+				add_resource = {
+					type = coal
+					amount = 44
+				}
+			}
+			528 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			1028 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			524 = {
+				add_resource = {
+					type = coal
+					amount = 5
+				}
+			}
+			
+		}
+
+
+		# SHX
+		if = {
+			limit = {
+				tag = SHX
+			}
+			615 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			
+			
+		}
+
+		# MAN
+		if = {
+			limit = {
+				tag = MAN
+			}
+			716 = {
+				add_resource = {
+					type = coal
+					amount = 36
+				}
+			}
+			
+			
+		}
+
+		# CHI
+		if = {
+			limit = {
+				tag = CHI
+			}
+			614 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			603 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+		}
+
+
+		# POL
+		if = {
+			limit = {
+				tag = POL
+			}
+			762 = {
+				add_resource = {
+					type = coal
+					amount = 38
+				}
+			}
+			92 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			90 = {
+				add_resource = {
+					type = coal
+					amount = 21
+				}
+			}
+		}
+
+		# FRA
+		if = {
+			limit = {
+				tag = FRA
+			}
+			29 = {
+				add_resource = {
+					type = coal
+					amount = 24
+				}
+			}
+			28 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			461 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			459 = {
+				add_resource = {
+					type = coal
+					amount = 5
+				}
+			}
+			671 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+		}
+
+
+		# RAJ
+		if = {
+			limit = {
+				tag = RAJ
+			}
+			435 = {
+				add_resource = {
+					type = coal
+					amount = 22
+				}
+			}
+			431 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			989 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+		}
+
+		# SAF
+		if = {
+			limit = {
+				tag = SAF
+			}
+			719 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			275 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			
+		}
+
+		# CAN
+		if = {
+			limit = {
+				tag = CAN
+			}
+			464 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			465 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			473 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			470 = {
+				add_resource = {
+					type = coal
+					amount = 13
+				}
+			}
+			
+		}
+
+
+
+		# AST
+		if = {
+			limit = {
+				tag = AST
+			}
+			285 = {
+				add_resource = {
+					type = coal
+					amount = 16
+				}
+			}
+			521 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			517 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+			
+		}
+
+		# BEL
+		if = {
+			limit = {
+				tag = BEL
+			}
+			34 = {
+				add_resource = {
+					type = coal
+					amount = 15
+				}
+			}
+			
+			
+			
+		}
+
+		# HOL
+		if = {
+			limit = {
+				tag = HOL
+			}
+			35 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+			
+		}
+
+
+		# ROM
+		if = {
+			limit = {
+				tag = ROM
+			}
+			79 = {
+				add_resource = {
+					type = coal
+					amount = 5
+				}
+			}
+			82 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			84 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			
+			
+			
+		}
+
+		# HUN
+		if = {
+			limit = {
+				tag = HUN
+			}
+			43 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			155 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			974 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			
+			
+			
+		}
+
+
+		# YUG
+		if = {
+			limit = {
+				tag = YUG
+			}
+			107 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			104 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			102 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			
+			
+			
+		}
+
+
+		# SPR
+		if = {
+			limit = {
+				tag = SPR
+			}
+			790 = {
+				add_resource = {
+					type = coal
+					amount = 19
+				}
+			}
+			174 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			166 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+		}
+
+
+
+		# MEX
+		if = {
+			limit = {
+				tag = MEX
+			}
+			480 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			481 = {
+				add_resource = {
+					type = coal
+					amount = 10
+				}
+			}
+			
+		}
+
+		# BRA
+		if = {
+			limit = {
+				tag = BRA
+			}
+			502 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			503 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+		}
+
+
+		# ARG
+		if = {
+			limit = {
+				tag = ARG
+			}
+			954 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+		}
+
+
+		# TUR
+		if = {
+			limit = {
+				tag = TUR
+			}
+			347 = {
+				add_resource = {
+					type = coal
+					amount = 19
+				}
+			}
+			
+			
+		}
+
+
+		# CHL
+		if = {
+			limit = {
+				tag = CHL
+			}
+			507 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			506 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			
+			
+		}
+
+
+		# POR
+		if = {
+			limit = {
+				tag = POR
+			}
+			180 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			181 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			
+			
+		}
+
+
+		# SWE
+		if = {
+			limit = {
+				tag = SWE
+			}
+			138 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			140 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			
+			
+		}
+
+		# GRE
+		if = {
+			limit = {
+				tag = GRE
+			}
+			731 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			
+			
+		}
+
+		# BUL
+		if = {
+			limit = {
+				tag = BUL
+			}
+			212 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+			
+		}
+
+		# FIN
+		if = {
+			limit = {
+				tag = FIN
+			}
+			150 = {
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			
+			
+		}
+
+		# URG
+		if = {
+			limit = {
+				tag = URG
+			}
+			946 = {
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			
+			
+		}
+
+		# BOL
+		if = {
+			limit = {
+				tag = BOL
+			}
+			487 = {
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			
+			
+		}
+
+		# PRU
+		if = {
+			limit = {
+				tag = PRU
+			}
+			303 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+		}
+
+		# COL
+		if = {
+			limit = {
+				tag = COL
+			}
+			493 = {
+				add_resource = {
+					type = coal
+					amount = 12
+				}
+			}
+			
+			
+		}
+
+		# VEN
+		if = {
+			limit = {
+				tag = VEN
+			}
+			489 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+			
+		}
+
+		# BRM
+		if = {
+			limit = {
+				tag = BRM
+			}
+			999 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+		}
+
+		# MAL
+		if = {
+			limit = {
+				tag = MAL
+			}
+			333 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			
+			
+		}
+
+		# INS
+		if = {
+			limit = {
+				tag = INS
+			}
+			672 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			
+			
+		}
+
+		every_country = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				country_event = { id = coal_events.2 }
+			}
+		}
+
+			
+	}
+
+
+
+	#DONT ADD COAL
+	option = {
+		name = coal_events.1.b
+
+
+		custom_effect_tooltip = morecoal_dont_add
+
+		every_country = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				country_event = { id = coal_events.2 }
+			}
+		}
+
+		
+	}
+
+	#DONT ADD COAL AND DONT ADD COAL FOR AI
+	option = {
+		name = coal_events.1.c
+
+		custom_effect_tooltip = morecoal_dont_add_disable_ai
+	}
+
+	#DISABLE THE MOD ENTIRELY
+	option = {
+		name = coal_events.1.d
+
+		set_global_flag = morecoal_disable_all_flag
+
+		custom_effect_tooltip = morecoal_disable_all
+	}
+
+}
+
+
+## FOR AI
+country_event = {
+	id = coal_events.2
+	title = coal_events.2.t
+	desc = coal_events.2.desc
+
+
+
+	is_triggered_only = yes
+
+
+	#ADD COAL
+	option = {
+		name = coal_events.2.a
+		
+		
+
+		# USA
+		if = {
+			limit = {
+				tag = USA
+			}
+			816 = {
+				add_resource = {
+					type = coal
+					amount = 44
+				}
+			}
+			360 = {
+				add_resource = {
+					type = coal
+					amount = 80
+				}
+			}
+			369 = {
+				add_resource = {
+					type = coal
+					amount = 30
+				}
+			}
+			362 = {
+				add_resource = {
+					type = coal
+					amount = 60
+				}
+			}
+			395 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			396 = {
+				add_resource = {
+					type = coal
+					amount = 23
+				}
+			}
+			382 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			380 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			381 = {
+				add_resource = {
+					type = coal
+					amount = 30
+				}
+			}
+			388 = {
+				add_resource = {
+					type = coal
+					amount = 15
+				}
+			}
+		}
+
+
+		# GER
+		if = {
+			limit = {
+				tag = GER
+			}
+			51 = {
+				add_resource = {
+					type = coal
+					amount = 70
+				}
+			}
+			67 = {
+				add_resource = {
+					type = coal
+					amount = 25
+				}
+			}
+			42 = {
+				add_resource = {
+					type = coal
+					amount = 26
+				}
+			}
+			65 = {
+				add_resource = {
+					type = coal
+					amount = 21
+				}
+			}
+		}
+
+		# CZE
+		if = {
+			limit = {
+				tag = CZE
+			}
+			9 = {
+				add_resource = {
+					type = coal
+					amount = 49
+				}
+			}
+			75 = {
+				add_resource = {
+					type = coal
+					amount = 17
+				}
+			}
+			72 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+		}
+
+		# ENG
+		if = {
+			limit = {
+				tag = ENG
+			}
+			130 = {
+				add_resource = {
+					type = coal
+					amount = 40
+				}
+			}
+			129 = {
+				add_resource = {
+					type = coal
+					amount = 17
+				}
+			}
+			132 = {
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
+			122 = {
+				add_resource = {
+					type = coal
+					amount = 28
+				}
+			}
+			133 = {
+				add_resource = {
+					type = coal
+					amount = 21
+				}
+			}
+		}
+
+		# SOV
+		if = {
+			limit = {
+				tag = SOV
+			}
+			227 = {
+				add_resource = {
+					type = coal
+					amount = 70
+				}
+			}
+			578 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			569 = {
+				add_resource = {
+					type = coal
+					amount = 10
+				}
+			}
+			219 = {
+				add_resource = {
+					type = coal
+					amount = 37
+				}
+			}
+			881 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			825 = {
+				add_resource = {
+					type = coal
+					amount = 23
+				}
+			}
+		}
+
+
+		# JAP
+		if = {
+			limit = {
+				tag = JAP
+			}
+			536 = {
+				add_resource = {
+					type = coal
+					amount = 44
+				}
+			}
+			528 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			1028 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			524 = {
+				add_resource = {
+					type = coal
+					amount = 5
+				}
+			}
+			
+		}
+
+
+		# SHX
+		if = {
+			limit = {
+				tag = SHX
+			}
+			615 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			
+			
+		}
+
+		# MAN
+		if = {
+			limit = {
+				tag = MAN
+			}
+			716 = {
+				add_resource = {
+					type = coal
+					amount = 36
+				}
+			}
+			
+			
+		}
+
+		# CHI
+		if = {
+			limit = {
+				tag = CHI
+			}
+			614 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			603 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+		}
+
+
+		# POL
+		if = {
+			limit = {
+				tag = POL
+			}
+			762 = {
+				add_resource = {
+					type = coal
+					amount = 38
+				}
+			}
+			92 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			90 = {
+				add_resource = {
+					type = coal
+					amount = 21
+				}
+			}
+		}
+
+		# FRA
+		if = {
+			limit = {
+				tag = FRA
+			}
+			29 = {
+				add_resource = {
+					type = coal
+					amount = 24
+				}
+			}
+			28 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			461 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			459 = {
+				add_resource = {
+					type = coal
+					amount = 5
+				}
+			}
+			671 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+		}
+
+
+		# RAJ
+		if = {
+			limit = {
+				tag = RAJ
+			}
+			435 = {
+				add_resource = {
+					type = coal
+					amount = 22
+				}
+			}
+			431 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			989 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+		}
+
+		# SAF
+		if = {
+			limit = {
+				tag = SAF
+			}
+			719 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			275 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			
+		}
+
+		# CAN
+		if = {
+			limit = {
+				tag = CAN
+			}
+			464 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			465 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			473 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			470 = {
+				add_resource = {
+					type = coal
+					amount = 13
+				}
+			}
+			
+		}
+
+
+
+		# AST
+		if = {
+			limit = {
+				tag = AST
+			}
+			285 = {
+				add_resource = {
+					type = coal
+					amount = 16
+				}
+			}
+			521 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			517 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+			
+		}
+
+		# BEL
+		if = {
+			limit = {
+				tag = BEL
+			}
+			34 = {
+				add_resource = {
+					type = coal
+					amount = 15
+				}
+			}
+			
+			
+			
+		}
+
+		# HOL
+		if = {
+			limit = {
+				tag = HOL
+			}
+			35 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+			
+		}
+
+
+		# ROM
+		if = {
+			limit = {
+				tag = ROM
+			}
+			79 = {
+				add_resource = {
+					type = coal
+					amount = 5
+				}
+			}
+			82 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			84 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			
+			
+			
+		}
+
+		# HUN
+		if = {
+			limit = {
+				tag = HUN
+			}
+			43 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			155 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			974 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			
+			
+			
+		}
+
+
+		# YUG
+		if = {
+			limit = {
+				tag = YUG
+			}
+			107 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			104 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			102 = {
+				add_resource = {
+					type = coal
+					amount = 11
+				}
+			}
+			
+			
+			
+		}
+
+
+		# SPR
+		if = {
+			limit = {
+				tag = SPR
+			}
+			790 = {
+				add_resource = {
+					type = coal
+					amount = 19
+				}
+			}
+			174 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			166 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+		}
+
+
+
+		# MEX
+		if = {
+			limit = {
+				tag = MEX
+			}
+			480 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			481 = {
+				add_resource = {
+					type = coal
+					amount = 10
+				}
+			}
+			
+		}
+
+		# BRA
+		if = {
+			limit = {
+				tag = BRA
+			}
+			502 = {
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+			503 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+		}
+
+
+		# ARG
+		if = {
+			limit = {
+				tag = ARG
+			}
+			954 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+		}
+
+
+		# TUR
+		if = {
+			limit = {
+				tag = TUR
+			}
+			347 = {
+				add_resource = {
+					type = coal
+					amount = 19
+				}
+			}
+			
+			
+		}
+
+
+		# CHL
+		if = {
+			limit = {
+				tag = CHL
+			}
+			507 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			506 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			
+			
+		}
+
+
+		# POR
+		if = {
+			limit = {
+				tag = POR
+			}
+			180 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			181 = {
+				add_resource = {
+					type = coal
+					amount = 14
+				}
+			}
+			
+			
+		}
+
+
+		# SWE
+		if = {
+			limit = {
+				tag = SWE
+			}
+			138 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			140 = {
+				add_resource = {
+					type = coal
+					amount = 3
+				}
+			}
+			
+			
+		}
+
+		# GRE
+		if = {
+			limit = {
+				tag = GRE
+			}
+			731 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			
+			
+		}
+
+		# BUL
+		if = {
+			limit = {
+				tag = BUL
+			}
+			212 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+			
+		}
+
+		# FIN
+		if = {
+			limit = {
+				tag = FIN
+			}
+			150 = {
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			
+			
+		}
+
+		# URG
+		if = {
+			limit = {
+				tag = URG
+			}
+			946 = {
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			
+			
+		}
+
+		# BOL
+		if = {
+			limit = {
+				tag = BOL
+			}
+			487 = {
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			
+			
+		}
+
+		# PRU
+		if = {
+			limit = {
+				tag = PRU
+			}
+			303 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+		}
+
+		# COL
+		if = {
+			limit = {
+				tag = COL
+			}
+			493 = {
+				add_resource = {
+					type = coal
+					amount = 12
+				}
+			}
+			
+			
+		}
+
+		# VEN
+		if = {
+			limit = {
+				tag = VEN
+			}
+			489 = {
+				add_resource = {
+					type = coal
+					amount = 7
+				}
+			}
+			
+			
+		}
+
+		# BRM
+		if = {
+			limit = {
+				tag = BRM
+			}
+			999 = {
+				add_resource = {
+					type = coal
+					amount = 6
+				}
+			}
+			
+			
+		}
+
+		# MAL
+		if = {
+			limit = {
+				tag = MAL
+			}
+			333 = {
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+			
+			
+		}
+
+		# INS
+		if = {
+			limit = {
+				tag = INS
+			}
+			672 = {
+				add_resource = {
+					type = coal
+					amount = 9
+				}
+			}
+			
+			
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+}
